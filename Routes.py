@@ -12,6 +12,10 @@ class Routes():
         
         self.api = Api
         self.route = '/api'
+        self.__get()
+        self.__post()
+        self.__delete()
+        self.__put()
         
     def __get(self):
         self.api.add_resource(CheckStatus, self.route+'/check-status')
